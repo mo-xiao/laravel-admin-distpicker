@@ -10,7 +10,7 @@ Distpicker extension for laravel-admin
 ## 安装
 
 ```bash
-composer require mo-xiao/laravel-admin
+composer require laravel-admin-ext/china-distpicker
 ```
 
 然后
