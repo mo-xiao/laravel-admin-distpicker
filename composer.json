@@ -1,13 +1,13 @@
 {
-    "name": "laravel-admin-ext/china-distpicker",
-    "description": "Distpicker extension for laravel-admin",
+    "name": "laravel-admin-ext/latlong",
+    "description": "Latitude & Longitude selector",
     "type": "library",
-    "keywords": ["laravel-admin", "extension", "distpicker"],
-    "homepage": "https://github.com/laravel-admin-ext/china-distpicker",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/laravel-admin-ext/latlong",
     "license": "MIT",
     "authors": [
         {
-            "name": "song",
+            "name": "z-song",
             "email": "zosong@126.com"
         }
     ],
@@ -20,15 +20,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Encore\\ChinaDistpicker\\": "src/"
+            "Encore\\Admin\\Latlong\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Encore\\ChinaDistpicker\\ChinaDistpickerServiceProvider"
+                "Encore\\Admin\\Latlong\\LatlongServiceProvider"
             ]
-
         }
     }
 }
