@@ -5,6 +5,10 @@
 
 此扩展名用于帮助您选择表单中的纬度和经度，该纬度和经度用于替换  `Laravel-admin` 内置 `Form\Field\Map` 组件。支持的地图包括 `Google map`, `Baidu map`, `AMap`, `Tencent Map`, `Yadex map`.
 
+## 预览截图
+
+![-1](https://user-images.githubusercontent.com/1479100/45096011-186c8580-b152-11e8-8a38-dcd94cd46d4b.png)
+
 ## 安装
 
 ```bash
