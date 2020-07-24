@@ -55,26 +55,29 @@ composer require laravel-admin-ext/latlong -vvv
 
 ```
 
-## 用法
+## 表单中使用
 
-假设你有两个字段 latitude ，并 longitude 在表中表示纬度和经度，然后使用形式如下
+设置默认值
 ```php
-$form->latlong('latitude', 'longitude', 'Position');
-
-//设置地图高度
-$form->latlong('latitude', 'longitude', 'Position')->height(500);
-
-//设置地图缩放
-$form->latlong('latitude', 'longitude', 'Position')->zoom(16);
-
-//设置默认位置
-$form->latlong('latitude', 'longitude', 'Position')->default(['lat' => 90, 'lng' => 90]);
+$form->distpicker([
+    'province_id' => '省份',
+    'city_id' => '市',
+    'district_id' => '区'
+], '地域选择')->default([
+    'province' => 130000,
+    'city'     => 130200,
+    'district' => 130203,
+]);
+```
+设置label
+```php
+$form->distpicker(['province_id', 'city_id', 'district_id'], '请选择区域');
 ```
 
-在显示页面中使用
+表格筛选中使用
 
 ```php
-$show->field('Position')->latlong('lat_column', 'long_column', $height = 400, $zoom = 16);
+$filter->distpicker('province_id', 'city_id', 'district_id', '地域选择');
 ```
 
 ## 打赏
